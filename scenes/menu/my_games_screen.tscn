@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dockvwywemmu4"]
+
+[ext_resource type="Script" uid="uid://cc4sgimoxij4p" path="res://scripts/ui/my_games_screen.gd" id="1_iq5sx"]
+
+[node name="MyGamesScreen" type="Control" unique_id=477474047]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_iq5sx")

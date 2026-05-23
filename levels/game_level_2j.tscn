@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://4cpc5pyofe8o"]
+
+[ext_resource type="Texture2D" uid="uid://1e56iruoegy2" path="res://art/fnf-daddy-dearest-stage-background.jpg" id="1_qbkea"]
+[ext_resource type="Script" uid="uid://b72ietm5hnk32" path="res://levels/game_level_2j.gd" id="1_uaknd"]
+[ext_resource type="PackedScene" uid="uid://dfdglmltorqae" path="res://objects/key_listener.tscn" id="2_gabpn"]
+[ext_resource type="Script" uid="uid://qm7jvma3qpbh" path="res://objects/key_listener_2p.gd" id="4_6ltml"]
+[ext_resource type="PackedScene" uid="uid://b04p5xkw18x5y" path="res://objects/player_2p1.tscn" id="5_6ltml"]
+[ext_resource type="Script" uid="uid://c87d3wp1i3750" path="res://objects/player_2p1.gd" id="6_5bcdu"]
+[ext_resource type="PackedScene" uid="uid://dew8mqm20q3s4" path="res://levels/game_ui_2p.tscn" id="7_6ltml"]
+[ext_resource type="PackedScene" uid="uid://b2ve1ss8v4mv5" path="res://objects/player_2p2.tscn" id="7_64cvm"]
+[ext_resource type="PackedScene" uid="uid://bngl8yp874eep" path="res://objects/villain_2p.tscn" id="8_4yvyw"]
+[ext_resource type="Script" uid="uid://cx1qsskrcq5da" path="res://objects/villain_2p.gd" id="8_64cvm"]
+[ext_resource type="Script" uid="uid://b18thnlggrw1g" path="res://objects/player_2p2.gd" id="8_phyht"]
+
+[sub_resource type="Environment" id="Environment_i5mjo"]
+background_mode = 3
+glow_enabled = true
+
+[node name="GameLevel" type="Node2D" unique_id=756741338]
+script = ExtResource("1_uaknd")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1115740952]
+
+[node name="Background" type="Sprite2D" parent="." unique_id=387311343]
+scale = Vector2(0.635, 0.635)
+texture = ExtResource("1_qbkea")
+
+[node name="J1_KeyListener_Q" parent="." unique_id=1387605537 instance=ExtResource("2_gabpn")]
+position = Vector2(-423, 280)
+script = ExtResource("4_6ltml")
+
+[node name="J2_KeyListener_Left" parent="." unique_id=223079932 instance=ExtResource("2_gabpn")]
+position = Vector2(212, 282)
+script = ExtResource("4_6ltml")
+
+[node name="J1_KeyListener_W" parent="." unique_id=1924315475 instance=ExtResource("2_gabpn")]
+position = Vector2(-343, 280)
+frame = 1
+script = ExtResource("4_6ltml")
+
+[node name="J2_KeyListener_Down" parent="." unique_id=15769231 instance=ExtResource("2_gabpn")]
+position = Vector2(292, 277)
+frame = 1
+script = ExtResource("4_6ltml")
+
+[node name="J1_KeyListener_E" parent="." unique_id=1332759443 instance=ExtResource("2_gabpn")]
+position = Vector2(-263, 280)
+frame = 2
+script = ExtResource("4_6ltml")
+
+[node name="J2_KeyListener_Up" parent="." unique_id=1578740191 instance=ExtResource("2_gabpn")]
+position = Vector2(372, 277)
+frame = 2
+script = ExtResource("4_6ltml")
+
+[node name="J1_KeyListener_R" parent="." unique_id=562806359 instance=ExtResource("2_gabpn")]
+position = Vector2(-183, 280)
+frame = 3
+script = ExtResource("4_6ltml")
+
+[node name="J2_KeyListener_Right" parent="." unique_id=1257451404 instance=ExtResource("2_gabpn")]
+position = Vector2(452, 277)
+frame = 3
+script = ExtResource("4_6ltml")
+
+[node name="Player2p" parent="." unique_id=693006002 instance=ExtResource("5_6ltml")]
+script = ExtResource("6_5bcdu")
+
+[node name="Player2p2" parent="." unique_id=501987035 instance=ExtResource("7_64cvm")]
+script = ExtResource("8_phyht")
+
+[node name="Villain2p" parent="." unique_id=413822508 instance=ExtResource("8_4yvyw")]
+script = ExtResource("8_64cvm")
+
+[node name="GameUI" parent="." unique_id=814319147 instance=ExtResource("7_6ltml")]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=2040263228]
+environment = SubResource("Environment_i5mjo")
+
+[node name="MusicPlayer" type="AudioStreamPlayer" parent="." unique_id=948206137]

@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://b2ve1ss8v4mv5"]
+
+[ext_resource type="Texture2D" uid="uid://brdv5628usweu" path="res://art/natanael_cano_v1.png" id="1_upxvw"]
+[ext_resource type="Script" uid="uid://c87d3wp1i3750" path="res://objects/player_2p1.gd" id="2_l44oe"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n3g06"]
+bg_color = Color(0.0006938975, 0.0006938978, 0.00069389684, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f0rp0"]
+bg_color = Color(0.81960785, 0.12156863, 0.011764706, 1)
+
+[node name="Player2p2" type="Node2D" unique_id=501987035]
+position = Vector2(4, 34)
+
+[node name="PlayerSprite" type="Sprite2D" parent="." unique_id=709457497]
+position = Vector2(315, 44)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_upxvw")
+script = ExtResource("2_l44oe")
+
+[node name="HealthBar" type="ProgressBar" parent="." unique_id=1235131145]
+custom_minimum_size = Vector2(100, 30)
+offset_left = 165.0
+offset_top = -71.0
+offset_right = 465.0
+offset_bottom = -41.0
+theme_override_styles/background = SubResource("StyleBoxFlat_n3g06")
+theme_override_styles/fill = SubResource("StyleBoxFlat_f0rp0")
+step = 1.0
+show_percentage = false
+metadata/_edit_use_anchors_ = true
+
+[node name="HealthLabel" type="Label" parent="HealthBar" unique_id=1846542002]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+metadata/_edit_use_anchors_ = true

@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://ti6ncxjdag7l"]
+
+[ext_resource type="Script" uid="uid://8b786hd4gwhu" path="res://scripts/ui/song_select.gd" id="1_s64ht"]
+
+[node name="SongSelect" type="Control" unique_id=1074008011]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_s64ht")
+
+[node name="Background" type="ColorRect" parent="." unique_id=1710557834]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.101960786, 0.101960786, 0.18039216, 1)
+
+[node name="Title" type="Label" parent="." unique_id=174284801]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 6.0
+offset_top = 80.0
+offset_right = 6.0
+offset_bottom = 160.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 36
+text = "SELECCIONA UNA CANCIÓN"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BackButton" type="Button" parent="." unique_id=1331764012]
+layout_mode = 0
+offset_left = 525.0
+offset_top = 165.0
+offset_right = 645.0
+offset_bottom = 207.0
+theme_override_font_sizes/font_size = 24
+text = "VOLVER"
+
+[node name="SongsContainer" type="VBoxContainer" parent="." unique_id=1453164338]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 15

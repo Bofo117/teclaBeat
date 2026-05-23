@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://bukxky6jp8v68"]
+
+[ext_resource type="Script" uid="uid://cw2y5qip7lop5" path="res://scripts/game/player_area.gd" id="1_jsymh"]
+[ext_resource type="PackedScene" uid="uid://dfdglmltorqae" path="res://objects/key_listener.tscn" id="2_fbcgt"]
+
+[node name="PlayerArea" type="Node2D" unique_id=636323657]
+script = ExtResource("1_jsymh")
+
+[node name="KeyListener" parent="." unique_id=1415352748 instance=ExtResource("2_fbcgt")]
+
+[node name="UI" type="Control" parent="." unique_id=660976740]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ScoreLabel" type="Label" parent="UI" unique_id=1246424579]
+visible = false
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 96.0
+offset_bottom = 38.0
+theme_override_font_sizes/font_size = 20
+text = "SCORE: 0"
+
+[node name="ComboLabel" type="Label" parent="UI" unique_id=455999157]
+visible = false
+layout_mode = 0
+offset_left = 10.0
+offset_top = 40.0
+offset_right = 89.0
+offset_bottom = 63.0
+theme_override_font_sizes/font_size = 20
+text = "COMBO: 0"

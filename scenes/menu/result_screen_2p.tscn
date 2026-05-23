@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://ck0m7ihqggpgw"]
+
+[ext_resource type="Script" uid="uid://bf4mu7vldqbr" path="res://scripts/ui/result_screen_2p.gd" id="1_fnrck"]
+
+[node name="ResultScreen2p" type="Panel" unique_id=1027811133]
+script = ExtResource("1_fnrck")

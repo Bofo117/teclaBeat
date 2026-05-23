@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://dew8mqm20q3s4"]
+
+[ext_resource type="Script" uid="uid://dcdyklgmmivjd" path="res://levels/game_ui_2p.gd" id="1_mr1la"]
+
+[node name="GameUI" type="Control" unique_id=814319147]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mr1la")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=416237790]
+
+[node name="Player1ScoreLabel" type="Label" parent="CanvasLayer" unique_id=1324506925]
+visible = false
+offset_left = 18.0
+offset_top = 18.0
+offset_right = 360.0
+offset_bottom = 71.0
+theme_override_constants/outline_size = 14
+text = " 0 pts"
+
+[node name="Player2ScoreLabel" type="Label" parent="CanvasLayer" unique_id=220787649]
+visible = false
+offset_left = 778.0
+offset_top = 18.0
+offset_right = 1120.0
+offset_bottom = 71.0
+theme_override_constants/outline_size = 14
+text = " 0 pts"
+
+[node name="Player1ComboLabel" type="Label" parent="CanvasLayer" unique_id=1396504623]
+visible = false
+offset_left = 18.0
+offset_top = 72.0
+offset_right = 360.0
+offset_bottom = 125.0
+theme_override_constants/outline_size = 14
+text = " 0x combo "
+
+[node name="Player2ComboLabel" type="Label" parent="CanvasLayer" unique_id=571497943]
+visible = false
+offset_left = 778.0
+offset_top = 72.0
+offset_right = 1120.0
+offset_bottom = 125.0
+theme_override_constants/outline_size = 14
+text = " 0x combo "

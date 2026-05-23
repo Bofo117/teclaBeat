@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://bngl8yp874eep"]
+
+[ext_resource type="Texture2D" uid="uid://c2j0f3vix0bwj" path="res://art/paquita_la_de_barrio_v1.png" id="1_5ow1w"]
+[ext_resource type="Script" uid="uid://cx1qsskrcq5da" path="res://objects/villain_2p.gd" id="2_rur8s"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ove3j"]
+bg_color = Color(0.0006938975, 0.0006938978, 0.00069389684, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t5jcf"]
+bg_color = Color(0.81960785, 0.12156863, 0.011764706, 1)
+
+[node name="Villain2p" type="Node2D" unique_id=413822508]
+
+[node name="VillainSprite" type="Sprite2D" parent="." unique_id=1421204134]
+position = Vector2(-246, 55)
+texture = ExtResource("1_5ow1w")
+script = ExtResource("2_rur8s")
+
+[node name="HealthBar" type="ProgressBar" parent="." unique_id=1317512651]
+custom_minimum_size = Vector2(100, 30)
+offset_left = -383.0
+offset_top = -119.0
+offset_right = -83.0
+offset_bottom = -89.0
+theme_override_styles/background = SubResource("StyleBoxFlat_ove3j")
+theme_override_styles/fill = SubResource("StyleBoxFlat_t5jcf")
+step = 1.0
+show_percentage = false
+metadata/_edit_use_anchors_ = true
+
+[node name="HealthLabel" type="Label" parent="HealthBar" unique_id=1685480810]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+metadata/_edit_use_anchors_ = true

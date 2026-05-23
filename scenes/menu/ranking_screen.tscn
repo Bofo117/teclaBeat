@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bautvu85akt3i"]
+
+[ext_resource type="Script" uid="uid://cys580cnpj5a8" path="res://scripts/ui/ranking_screen.gd" id="1_gv1hj"]
+
+[node name="StatsScreen" type="Control" unique_id=1434564360]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_gv1hj")

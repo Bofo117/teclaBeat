@@ -1,0 +1,131 @@
+[gd_scene format=3 uid="uid://jqrnrkdbukiv"]
+
+[ext_resource type="Script" uid="uid://bn1lhmqothr8a" path="res://scripts/ui/key_info.gd" id="1_juas3"]
+
+[node name="KeyInfoPanel" type="Panel" unique_id=1250666387]
+custom_minimum_size = Vector2(500, 400)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_juas3")
+
+[node name="Title" type="Label" parent="." unique_id=457691129]
+layout_mode = 0
+offset_left = 146.0
+offset_top = 39.0
+offset_right = 361.0
+offset_bottom = 73.0
+theme_override_colors/font_color = Color(0.8, 0.6666667, 0.2, 1)
+theme_override_font_sizes/font_size = 24
+text = "TECLAS DEL JUEGO"
+horizontal_alignment = 1
+
+[node name="Player1Container" type="VBoxContainer" parent="." unique_id=2028251984]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -136.5
+offset_top = -110.0
+offset_right = 136.5
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="Player1Title" type="Label" parent="Player1Container" unique_id=1431019713]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.6666667, 0.26666668, 1)
+theme_override_font_sizes/font_size = 18
+text = "JUGADOR 1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Keys1" type="Label" parent="Player1Container" unique_id=586925549]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "Q         W         E          R"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Description1" type="Label" parent="Player1Container" unique_id=1295500410]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6666667, 0.6666667, 0.6666667, 1)
+text = "Izquierda / Abajo / Arriba / Derecha"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VSeparator" type="VSeparator" parent="." unique_id=1130142919]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 199.0
+offset_right = 494.0
+offset_bottom = 204.0
+
+[node name="Player2Container" type="VBoxContainer" parent="." unique_id=1463247238]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -127.5
+offset_top = 14.0
+offset_right = 127.5
+offset_bottom = 114.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="Player2Title" type="Label" parent="Player2Container" unique_id=835495476]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.26666668, 0.6666667, 1, 1)
+theme_override_font_sizes/font_size = 18
+text = "JUGADOR 2"
+horizontal_alignment = 1
+
+[node name="Keys2" type="Label" parent="Player2Container" unique_id=1554480655]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "←      ↓      →      ↑"
+horizontal_alignment = 1
+
+[node name="Description2" type="Label" parent="Player2Container" unique_id=2040909407]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6666667, 0.6666667, 0.6666667, 1)
+text = "Flechas direccionales"
+horizontal_alignment = 1
+
+[node name="StartButton" type="Button" parent="." unique_id=1148389396]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -60.0
+offset_top = -70.0
+offset_right = 60.0
+offset_bottom = -34.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 20
+text = "COMENZAR"
+
+[node name="CloseButton" type="Button" parent="." unique_id=1288565083]
+layout_mode = 0
+offset_left = 412.0
+offset_top = 11.0
+offset_right = 481.0
+offset_bottom = 42.0
+tooltip_text = "Volver al menú de canciones"
+text = "X"

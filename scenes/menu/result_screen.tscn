@@ -1,0 +1,125 @@
+[gd_scene format=3 uid="uid://kvjbhebhxpmi"]
+
+[ext_resource type="Script" uid="uid://buxm1xeahni3" path="res://scripts/ui/result_screen.gd" id="1_fbrwb"]
+
+[node name="ResultScreen" type="Node2D" unique_id=436520281]
+
+[node name="result_screen" type="Panel" parent="." unique_id=1208653802]
+layout_direction = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 364.0
+offset_top = 97.0
+offset_right = 864.0
+offset_bottom = 547.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fbrwb")
+
+[node name="CloseButton" type="Button" parent="result_screen" unique_id=1015994799]
+layout_mode = 0
+offset_left = 460.0
+offset_top = 10.0
+offset_right = 490.0
+offset_bottom = 41.0
+rotation = 0.017453292
+tooltip_text = "Cerrar"
+text = "X"
+
+[node name="Title" type="Label" parent="result_screen" unique_id=873481802]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -76.0
+offset_top = -195.0
+offset_right = 76.0
+offset_bottom = -161.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 0.6666667, 0.26666668, 1)
+theme_override_font_sizes/font_size = 24
+text = "RESULTADOS"
+
+[node name="SongNameLabel" type="Label" parent="result_screen" unique_id=945820604]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -93.5
+offset_top = -145.0
+offset_right = 93.5
+offset_bottom = -119.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 18
+text = "Canción: Rhythm Hell"
+
+[node name="ScoreLabel" type="Label" parent="result_screen" unique_id=1195783857]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -85.5
+offset_top = -85.0
+offset_right = 85.5
+offset_bottom = -40.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+text = "PUNTAJE: 0"
+
+[node name="ComboLabel" type="Label" parent="result_screen" unique_id=1886199084]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.5
+offset_top = -35.0
+offset_right = 100.5
+offset_bottom = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+text = "MEJOR COMBO: 0"
+
+[node name="MessageLabel" type="Label" parent="result_screen" unique_id=3726621]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -60.0
+offset_top = 45.0
+offset_right = 70.0
+offset_bottom = 95.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "GUARDAR"
+
+[node name="ContinueButton" type="Button" parent="result_screen" unique_id=1895348891]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -52.0
+offset_top = 114.0
+offset_right = 78.0
+offset_bottom = 164.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "SALIR"
